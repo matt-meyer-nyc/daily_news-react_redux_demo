@@ -16,6 +16,7 @@ to start React server run 'npm start'
 to start dummy db, run 'json-server --watch db.json'
 
 Project created with guidance from Coding Revolution's Udemy Course 'The complete React and Redux course: Build modern apps'
+
 ------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
