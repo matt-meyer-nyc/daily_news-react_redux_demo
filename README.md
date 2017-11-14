@@ -1,8 +1,18 @@
 
-**CURRENTLY IN PROGRESS...**
+Sample React project utilizing **Redux** for state management along with **Redux-Promise** for middleware.
 
+Highlights include reusable dynamic 'widget' component to be used in multiple sections tracking likes and dislikes of sample articles and galleries, with count stored and updated, and **React-Slick** for slider image gallery.
+ 
+Dummy database included in db.json file, and run with npm package json-server.
 
+To run project:
 
+clone or download project files from root folder 'daily_news-react_redux_demo'
+assuming you've insalled node already, run 'npm install'
+to start React server run 'npm start'
+to start dummy db, run 'json-server --watch db.json'
+
+Project created with guidance from Coding Revolution's Udemy Course 'The complete React and Redux course: Build modern apps'
 ------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
