@@ -8,8 +8,11 @@ Dummy database included in db.json file, and run with npm package json-server.
 To run project:
 
 clone or download project files from root folder 'daily_news-react_redux_demo'
+
 assuming you've insalled node already, run 'npm install'
+
 to start React server run 'npm start'
+
 to start dummy db, run 'json-server --watch db.json'
 
 Project created with guidance from Coding Revolution's Udemy Course 'The complete React and Redux course: Build modern apps'
