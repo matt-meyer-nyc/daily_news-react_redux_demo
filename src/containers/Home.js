@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { latestNews, otherNews } from '../actions';
+import { latestNews, otherNews, latestGallery } from '../actions';
 import { bindActionCreators } from 'redux';
+import slider from 'react-slick';
 
 //components
 import LatestNews from '../components/latestNews';
 import OtherNews from '../components/otherNews';
+import Gallery from '../components/gallery';
 
 
 class Home extends Component {
 
   componentDidMount() {
-    this.props.latestNews()
-    this.props.otherNews()
+    this.props.latestNews();
+    this.props.otherNews();
+    this.props.latestGallery();
   }
 
   render() {
@@ -22,6 +25,7 @@ class Home extends Component {
       <div>
         <LatestNews latest={this.props.articles.latest}/>
         <OtherNews otherNews={this.props.articles.other}/>
+        <Gallery latestGallery={this.props.gallery.latestGallery} />
       </div>
 
     );
@@ -34,7 +38,8 @@ function mapStateToProps(state) {
 
   return {
 
-    articles: state.articles
+    articles: state.articles,
+    gallery: state.gallery
 
   }
 
@@ -42,7 +47,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
 
-  return bindActionCreators({latestNews, otherNews}, dispatch)
+  return bindActionCreators({latestNews, otherNews, latestGallery}, dispatch)
 
 }
 
